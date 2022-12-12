@@ -1,0 +1,206 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.cabecalho {
+  max-width: 1219px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.cabecalho a {
+  color: #3C184E;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.ct-principal {
+  max-width: 1219px;
+  margin: 0 auto;
+}
+
+.ct-conteudo {
+  margin-top: 162px;
+}
+.ct-conteudo h1 {
+  color: #3C184E;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 42px;
+}
+.ct-conteudo h1::after {
+  content: "";
+  background: url(../img/Vector\ 1.svg) center top/cover no-repeat;
+  display: block;
+  width: 232px;
+  height: 27px;
+}
+.ct-conteudo p {
+  color: #3C184E;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 45px;
+}
+.ct-conteudo .btn-contribuir {
+  color: #FFFFFF;
+  background-color: #713FFF;
+  border-radius: 48px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 12px 32px;
+  text-decoration: none;
+}
+.ct-conteudo .btn-contribuir:hover {
+  background-color: #5116f1;
+}
+.ct-conteudo .btn-contato {
+  color: #3C184E;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.ct-imagens {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.ct-imagens .paleta-azul {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 800px;
+}
+.ct-imagens .paleta-patas {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.ct-imagens .cachorro {
+  position: absolute;
+  right: 270px;
+  top: 237px;
+}
+.ct-imagens .racao {
+  position: absolute;
+  right: 540px;
+  top: 525px;
+}
+.ct-imagens .paleta-azul-mobile,
+.ct-imagens .paleta-patas-mobile,
+.ct-imagens .paleta-cachorro-mobile,
+.ct-imagens .racao-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .cabecalho {
+    display: flex;
+    justify-content: center;
+  }
+  .ct-conteudo {
+    text-align: center;
+    margin-top: 75px;
+  }
+  .ct-conteudo h1::after {
+    margin-left: 250px;
+  }
+  .ct-imagens {
+    top: 475px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ct-conteudo h1::after {
+    margin-left: 125px;
+  }
+  .ct-imagens .paleta-azul,
+.ct-imagens .paleta-patas {
+    width: 550px;
+  }
+  .ct-imagens .cachorro {
+    width: 350px;
+    right: 160px;
+    top: 110px;
+  }
+  .ct-imagens .racao {
+    right: 350px;
+    top: 355px;
+    width: 270px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cabecalho a {
+    font-size: 24px;
+    line-height: 21px;
+  }
+  main {
+    padding: 1.5rem;
+  }
+  .ct-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ct-conteudo h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .ct-conteudo h1::after {
+    width: 107px;
+    height: 16px;
+    margin-left: 0;
+  }
+  .ct-conteudo .btn-contribuir {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 24px;
+    padding: 12px 48px;
+  }
+  .ct-conteudo .btn-contato {
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 0;
+  }
+  .ct-imagens {
+    top: 490px;
+  }
+  .ct-imagens .paleta-azul,
+.ct-imagens .paleta-patas,
+.ct-imagens .cachorro,
+.ct-imagens .racao {
+    display: none;
+  }
+  .ct-imagens .paleta-azul-mobile,
+.ct-imagens .paleta-patas-mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .ct-imagens .paleta-cachorro-mobile {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 95px;
+  }
+  .ct-imagens .racao-mobile {
+    display: block;
+    position: absolute;
+    right: 110px;
+    top: 300px;
+    width: 195px;
+  }
+}/*# sourceMappingURL=style.css.map */
